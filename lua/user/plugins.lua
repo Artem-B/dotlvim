@@ -88,5 +88,16 @@ lvim.plugins = {
   },
   "ThePrimeagen/vim-be-good",
   "mbbill/undotree",
-  "rafamadriz/neon"
+  "rafamadriz/neon",
+  "ErichDonGubler/lsp_lines.nvim",
+  {
+    "casonadams/simple-diagnostics.nvim",
+    config = function()
+      require("simple-diagnostics").setup({
+        virtual_text = false,
+        message_area = true,
+        signs = true,
+      })
+    end,
+  }
 }
